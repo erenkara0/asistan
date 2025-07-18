@@ -11,7 +11,7 @@ async def main():
     # Logger'ı initialize et
     logger = Logger.get_logger("main")
     
-    # Graceful shutdown için signal handler
+    # Graceful shutdown için signal handler.
     async def shutdown_handler(signum, frame):
         await close_db()
         sys.exit(0)
