@@ -7,6 +7,7 @@ class HotelProblem(Model):
     departman = fields.CharField(max_length=100, index=True)  
     problem_type = fields.CharField(max_length=100, index=True) 
     aciklama = fields.TextField(null=True)
+    cozum_oneri = fields.TextField(null=True)
     created_at = fields.DatetimeField(index=True)  
 
     class Meta:
